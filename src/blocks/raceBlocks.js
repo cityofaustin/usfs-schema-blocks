@@ -31,7 +31,7 @@ const raceBlocks = {
   },
   ui: {
     race: {
-      "ui:title": "Your race",
+      "ui:title": "Race",
       "ui:widget": "radio",
       "ui:options": {
         hideOnReviewIfFalse: true
