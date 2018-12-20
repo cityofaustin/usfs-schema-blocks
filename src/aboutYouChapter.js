@@ -16,6 +16,7 @@ const aboutYouChapter = {
             type: "object",
             properties: {}
           },
+          // ...raceBlocks.schema,
           race: raceBlocks.schema.race,
           otherRace: raceBlocks.schema.otherRace,
           gender: {
