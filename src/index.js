@@ -1,15 +1,3 @@
-import whatHappenedChapter from "./whatHappenedChapter";
-import officerDetailsChapter from "./officerDetailsChapter";
-import aboutYouChapter from "./aboutYouChapter";
-import howYouFoundUsChapter from "./howYouFoundUsChapter";
-import shareEvidenceChapter from "./shareEvidenceChapter";
-import witnessDetailsChapter from "./witnessDetailsChapter";
+import raceBlocks from "./blocks/raceBlocks";
 
-export {
-  whatHappenedChapter,
-  officerDetailsChapter,
-  aboutYouChapter,
-  howYouFoundUsChapter,
-  shareEvidenceChapter,
-  witnessDetailsChapter
-};
+export { raceBlocks };

@@ -14,95 +14,34 @@ import witnessDetailsChapter from "../src/witnessDetailsChapter";
 import aboutYouChapter from "../src/aboutYouChapter";
 import howYouFoundUsChapter from "../src/howYouFoundUsChapter";
 
-storiesOf("Chapter: What happened?", module).add("Page: What happened?", () => {
-  const currentLocation = {
-    pathname: "/what-happened"
+import raceBlocks from "../src/blocks/raceBlocks";
+
+function createBlockChapter({ schema, uiSchema }) {
+  return {
+    title: "I'm for blocks!",
+    pages: {
+      block: {
+        path: "block",
+        title: "I'm for blocks!",
+        schema: {
+          type: "object",
+          properties: schema
+        },
+        uiSchema: uiSchema
+      }
+    }
   };
+}
 
-  return (
-    <Form
-      location={currentLocation}
-      chapter={whatHappenedChapter}
-      page="whatHappened"
-    />
-  );
+const currentLocation = {
+  pathname: "/block"
+};
+
+storiesOf("Race", module).add("Default", () => {
+  const raceChapter = createBlockChapter({
+    schema: raceBlocks.schema,
+    uiSchema: raceBlocks.ui
+  });
+
+  return <Form location={currentLocation} chapter={raceChapter} page="block" />;
 });
-
-storiesOf("Chapter: Share Evidence", module).add("Page: Share Evidence", () => {
-  const currentLocation = {
-    pathname: "/share-evidence"
-  };
-
-  return (
-    <Form
-      location={currentLocation}
-      chapter={shareEvidenceChapter}
-      page="shareEvidence"
-    />
-  );
-});
-
-storiesOf("Chapter: Officer Details", module).add(
-  "Page: Officer Details",
-  () => {
-    const currentLocation = {
-      pathname: "/officer-details"
-    };
-
-    return (
-      <Form
-        location={currentLocation}
-        chapter={officerDetailsChapter}
-        page="officerDetails"
-      />
-    );
-  }
-);
-
-storiesOf("Chapter: Witness Details", module).add(
-  "Page: Witness Details",
-  () => {
-    const currentLocation = {
-      pathname: "/witness-details"
-    };
-
-    return (
-      <Form
-        location={currentLocation}
-        chapter={witnessDetailsChapter}
-        page="witnessDetails"
-      />
-    );
-  }
-);
-
-storiesOf("Chapter: About you", module).add("Page: About you", () => {
-  const currentLocation = {
-    pathname: "/about-you"
-  };
-
-  return (
-    <Form
-      location={currentLocation}
-      chapter={aboutYouChapter}
-      page="aboutYou"
-    />
-  );
-});
-
-storiesOf("Chapter: How you found us", module).add(
-  "Page: How you found us",
-  () => {
-    const currentLocation = {
-      pathname: "/how-you-found-us"
-    };
-
-    return (
-      <Form
-        location={currentLocation}
-        chapter={howYouFoundUsChapter}
-        page="howYouFoundUs"
-      />
-    );
-  }
-);
