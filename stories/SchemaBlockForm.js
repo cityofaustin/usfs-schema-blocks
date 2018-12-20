@@ -7,6 +7,7 @@ import FormPage from "us-forms-system/lib/js/containers/FormPage";
 import configureStore from "redux-mock-store";
 
 import "us-forms-system/lib/css/styles.css";
+import "./SchemaBlockForm.css";
 
 const mockStore = configureStore([]);
 
