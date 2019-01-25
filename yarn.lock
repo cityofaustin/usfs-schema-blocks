@@ -900,9 +900,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@cityofaustin/usfs-components@https://github.com/cityofaustin/usfs-components":
-  version "0.0.1"
-  resolved "https://github.com/cityofaustin/usfs-components#57043f4f58a7d49ca03af05a3fdbadd2662d1f1a"
+"@cityofaustin/usfs-components@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@cityofaustin/usfs-components/-/usfs-components-0.0.2.tgz#b9cbd4f74866c5f75229ab5667c41ed0ea57ee5a"
+  integrity sha512-5Gd9b3bgOCG1yXF0K3Ip8vjmY/B0G+3OMh+OE03H8Z3O9QNVDEt48VX9rzxQGok3uu9P3i1cFbT9+BmeICiLtg==
   dependencies:
     "@dump247/storybook-state" "^1.5.2"
     classnames "^2.2.6"
