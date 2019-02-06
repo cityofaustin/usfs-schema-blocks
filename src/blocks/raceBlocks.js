@@ -37,6 +37,7 @@ const raceBlocks = {
       }
     },
     otherRace: {
+      "ui:placeholder": "- Select race -",
       "ui:title": " ",
       "ui:options": {
         expandUnder: "race",
