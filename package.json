@@ -1,6 +1,6 @@
 {
   "name": "@cityofaustin/usfs-schema-blocks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Building blocks to use in USFS schemas",
   "main": "build/index.js",
   "repository": "https://github.com/cityofaustin/usfs-schema-blocks",
